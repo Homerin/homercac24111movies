@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #181419;
+    color: white;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+
+        .anclaLogo {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .listaNav {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .listaItem {
+                margin-right: 20px;
+
+                .linkNav {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    padding: 0.5rem 1rem;
+
+                    /* Agregar efecto de botón presionado */
+                    transition: transform 0.3s, box-shadow 0.3s;
+
+                    &:hover {
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                    }
+
+                }
+
+                /* boton iniciar sesion */
+                .linkNav.iniciarSesion {
+                    background-color: #181419;
+                    color: white;
+                    border-radius: 5px;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+
+                    &:hover {
+                        background-color: #9f3647;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/*ESTILOS PARA HEADER MOBILE Y TABLET*/
+@media (max-width: 768px) {
+
+    .header {
+        height: initial;
+
+        .navegacion {
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .anclaLogo {
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .listaNav {
+                padding: initial;
+
+                .listaItem {
+                    .linkNav {
+                        font-weight: 400;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* SECCION PRINCIPAL */
+
+.main {
+    .sectionPrincipal {
+        color: white;
+        background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/banner-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .tituloPrincipal {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .subtituloPrincipal {
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .botonRegistrarse {
+            background-color: #9f3647;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+    }
+
+    .buscadorPrincipal {
+        background-color: #181419;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tituloSection {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .buscadorpeliculas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+
+            .inputBuscador {
+                height: 50px;
+                width: 500px;
+                margin: 20px 10px;
+                padding: 0px 20px;
+                font-size: 1.2rem;
+                border: 2px solid white;
+                border-radius: 25px;
+                outline: none;
+            }
+
+            .botonBuscador {
+                background-color: #9f3647;
+                color: #ffffff;
+                display: inline-block;
+                height: 50px;
+                margin: 20px 10px;
+                padding: 0 20px;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                border: 2px solid white;
+                text-align: center;
+
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                }
+
+            }
+        }
+
+
+    }
+}
