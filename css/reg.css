@@ -1,0 +1,71 @@
+main{
+    background-image: url('../img/img2.jpg');
+    background-size:cover;
+}
+
+.form-outline {
+    border-color: red;
+    border-width: 2px;
+    border-radius: 25px;
+
+}
+
+.form-outline input{
+    background: transparent;
+}
+
+.form-control::placeholder{
+    color: rgb(87, 83, 83);
+}
+
+.form-control:focus{
+    background: transparent;
+
+}
+
+.form-check {
+    margin-left:1.5rem;
+    color: white;  
+    font-size: small;
+}
+
+.card-custom {
+    background-color:rgb(42,42,42);
+}
+
+.text-start{
+    color:white;
+}
+
+.input-custom {
+    border-color: #9f3647;
+    border-width: 2px;  
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(42,42,42);
+
+}
+
+.btn-custom{
+    background-color: #9f3647;
+    border-color: #9f3647;
+}
+
+.btn-custom:hover{
+    background-color: #9f3647;
+    border-color: #9f3647;
+}
+
+.error-text{
+    color: red;
+    font-size: 0.75rem;
+    align-items: center;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.input-custom:focus{
+    color: white;
+}

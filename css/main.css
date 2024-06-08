@@ -1,0 +1,219 @@
+nav {
+    display:flex;
+}
+
+body {
+}
+
+main {
+    background-color:#181419;
+}
+
+hr {
+    width: 80%;
+    border-color: #9f3647;
+}
+
+.navbar-custom {
+    background-color:#9f3647; /* Color rojo */
+}
+
+.style-1{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+.style-2{
+    color: white;
+    font-weight: 400;
+}
+
+.btn-custom-1{
+    background-color:#9f3647;
+    outline-color:#9f3647; 
+    color: white;
+}
+
+.form-custom-1{
+    border-radius: 25px;
+    width: 500px;
+}
+
+
+.container-no-margin{
+    margin-left: 0;
+    margin-right: 0;
+}
+.iniciarSesionBtn {
+    margin-right: 20px;
+}
+
+/** Seccion principal **/
+.seccionPrincipal {
+    /* Fondo con imagen */
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),  
+            rgba(0, 0, 0, 0.5)   
+        ),
+        url('../img/img1.jpg'); 
+
+    background-size: cover; 
+    justify-content: center;
+
+    height: 90vh;
+}
+
+
+.seccionPrincipal h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.seccionPrincipal h3{
+    margin-bottom: 2rem;
+}
+
+
+.busquedaPrincipal {
+    background-color: #181419;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+}
+
+.searchBar{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.buscarBtn{
+    background-color: #9f3647;
+    border-radius: 25px;
+    border-color: white;
+}
+
+/** Seccion tendencias hoy **/
+
+
+.tendenciasHoy{
+}
+
+.galeria {
+    background:#181419;
+}
+
+.tendenciasHoy h1{
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.movie-poster{
+    position: relative;
+    height: 100%;
+    transition: all 0.5s ease;
+    box-shadow: none;
+
+    /**Se achica cuando pasa el mouse arriba de él**/
+    &:hover {
+        transform: scale(0.9);
+    }
+    
+    /**Aparición de sombra cuando pasa el mouse arriba de él**/
+    &:hover img{
+        box-shadow: 0 0 10px #9f3647;
+    }
+
+    /**Aparicion del título de la pelicula cuando pasa el mouse arriba de él**/
+    &:hover .titulo-pelicula{
+        opacity: 1; 
+    }
+
+}
+
+.movie-poster img{
+    height:100%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.col-xs-12 .titulo-pelicula,
+.col-sm-6 .titulo-pelicula,
+.col-md-4 .titulo-pelicula,
+.col-lg-3 .titulo-pelicula {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+/** botones anterior y siguiente **/
+
+.botonesTendencias {
+    margin-top: 2rem;
+    column-gap: 100px;
+}
+
+.botonesTendencias button{
+    border-color: white;
+
+}
+
+.aclamadas {
+}
+
+.row-aclamadas {
+    height: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Para mejorar el scroll en dispositivos iOS */
+    scrollbar-width: thin; /* Estilo de la barra de desplazamiento */
+  }
+
+.row-aclamadas .movie-poster img{
+  
+    border-radius: 10px;
+}
+
+/** Seccion footer **/
+footer {
+    background-color: #9f3647;
+}
+
+footer .container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.btn-footer {
+    font-weight: 600;
+    color: white;
+}
+
+.btn-footer {
+    background-color: transparent !important;
+    color: white !important; /* Mantener el color de texto blanco en el hover */
+    border-color: transparent !important;
+}
+.adminBtn{
+    color:white;
+    font-weight: 600;
+    background-color: #181419;
+}
+
+.adminBtn:hover{
+    background-color: #181419;
+    color:white;
+
+}
